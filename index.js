@@ -41,7 +41,7 @@ app.use(session(
     {
         name: 'employee_review',
         //ToDO Change the secret before deployment
-        secret:'test',
+        secret:process.env.secretKey,
         saveUninitialized: false,
         resave: false,
         cookie:
